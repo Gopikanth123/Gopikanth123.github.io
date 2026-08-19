@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gopikanth Tirumani — NLP Engineer | Generative AI & Agentic AI Engineer</title>
+  <meta name="description" content="Portfolio of Gopikanth Tirumani — NLP Engineer specializing in Generative AI, Agentic AI, RAG, Multi-Agent Systems, MCP, Machine Learning, and production AI systems.">
+  <meta name="keywords" content="Gopikanth Tirumani, NLP Engineer, Generative AI, Agentic AI, RAG, LLM, MCP, Machine Learning, AI Portfolio">
+  <meta name="author" content="Gopikanth Tirumani">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-glow bg-glow--3"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>GT<span class="nav__logo-bracket"> /&gt;</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#what-i-build" class="nav__link">What I Build</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__links">
+      <a href="#about" class="mobile-nav__link">About</a>
+      <a href="#what-i-build" class="mobile-nav__link">What I Build</a>
+      <a href="#projects" class="mobile-nav__link">Projects</a>
+      <a href="#skills" class="mobile-nav__link">Skills</a>
+      <a href="#experience" class="mobile-nav__link">Experience</a>
+      <a href="#contact" class="mobile-nav__link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__badge animate-in">
+            <span class="hero__badge-dot"></span>
+            Available for opportunities
+          </div>
+          <h1 class="hero__title animate-in" style="--delay: 0.1s">
+            Building Intelligent<br>
+            <span class="hero__title-gradient">AI Systems</span> That<br>
+            Solve Real Problems.
+          </h1>
+          <p class="hero__subtitle animate-in" style="--delay: 0.2s">
+            I design and deploy production-ready <strong>Generative AI, Agentic AI, RAG, and Machine Learning systems</strong>, transforming complex business workflows into intelligent applications powered by natural language.
+          </p>
+          <div class="hero__cta animate-in" style="--delay: 0.3s">
+            <a href="#projects" class="btn btn--primary">
+              <i class="ph ph-rocket-launch"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn--secondary">
+              <i class="ph ph-envelope"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero__stats animate-in" style="--delay: 0.4s">
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-count="10">0</span><span class="hero__stat-plus">+</span>
+              <span class="hero__stat-label">Projects</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-count="7">0</span><span class="hero__stat-plus">+</span>
+              <span class="hero__stat-label">Domains</span>
+            </div>
+            <div class="hero__stat-divider"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-value" data-count="1">0</span>
+              <span class="hero__stat-label">IEEE Publication</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual animate-in" style="--delay: 0.3s">
+          <div class="hero__image-wrapper">
+            <div class="hero__image-ring"></div>
+            <div class="hero__image-ring hero__image-ring--2"></div>
+            <img src="my_image.png" alt="Gopikanth Tirumani" class="hero__image">
+          </div>
+          <div class="hero__floating-card hero__floating-card--1">
+            <i class="ph ph-brain"></i>
+            <span>Agentic AI</span>
+          </div>
+          <div class="hero__floating-card hero__floating-card--2">
+            <i class="ph ph-graph"></i>
+            <span>RAG Systems</span>
+          </div>
+          <div class="hero__floating-card hero__floating-card--3">
+            <i class="ph ph-robot"></i>
+            <span>Multi-Agent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-user"></i> About Me</span>
+        <h2 class="section__title">Turning Complex AI Into<br><span class="gradient-text">Production-Ready Systems</span></h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text glass-card">
+          <p>I am an <strong>NLP Engineer specializing in Generative AI, Agentic AI, and production machine-learning systems</strong>.</p>
+          <p>My work focuses on designing AI applications that go beyond simple chat interfaces by combining <strong>LLMs, retrieval systems, tool calling, multi-agent orchestration, structured workflows, APIs, and cloud infrastructure</strong>.</p>
+          <p>I enjoy building systems where AI can understand context, reason over structured and unstructured information, interact with external tools, execute workflows, and provide reliable real-world outcomes.</p>
+        </div>
+        <div class="about__sidebar">
+          <div class="about__card glass-card">
+            <h3><i class="ph ph-globe-hemisphere-west"></i> Domains</h3>
+            <div class="about__tags">
+              <span class="tag">Real Estate</span>
+              <span class="tag">Education</span>
+              <span class="tag">Customer Analytics</span>
+              <span class="tag">Financial / Revenue</span>
+              <span class="tag">Energy Markets</span>
+              <span class="tag">Developer Automation</span>
+              <span class="tag">Assistive AI</span>
+            </div>
+          </div>
+          <div class="about__card glass-card">
+            <h3><i class="ph ph-lightning"></i> Interests</h3>
+            <div class="about__tags">
+              <span class="tag tag--accent">Agentic AI</span>
+              <span class="tag tag--accent">Multi-Agent Systems</span>
+              <span class="tag tag--accent">MCP</span>
+              <span class="tag tag--accent">Advanced RAG</span>
+              <span class="tag tag--accent">Knowledge Graphs</span>
+              <span class="tag tag--accent">Real-Time AI</span>
+              <span class="tag tag--accent">AI Dev Tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Build Section -->
+  <section class="section what-i-build" id="what-i-build">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-hammer"></i> What I Build</span>
+        <h2 class="section__title">Specialized In Building<br><span class="gradient-text">Intelligent AI Solutions</span></h2>
+      </div>
+      <div class="services__grid">
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--purple">
+            <i class="ph ph-brain"></i>
+          </div>
+          <h3>Agentic AI</h3>
+          <p>Designing AI agents capable of reasoning, tool usage, workflow execution, state management, and multi-step task completion.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--blue">
+            <i class="ph ph-users-three"></i>
+          </div>
+          <h3>Multi-Agent Systems</h3>
+          <p>Building specialized agents and orchestrating them through stateful workflows using LangGraph and structured tool execution.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--cyan">
+            <i class="ph ph-magnifying-glass-plus"></i>
+          </div>
+          <h3>Retrieval-Augmented Generation</h3>
+          <p>Designing RAG systems using vector search, keyword retrieval, hybrid retrieval, knowledge graphs, and structured knowledge representations.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--green">
+            <i class="ph ph-terminal-window"></i>
+          </div>
+          <h3>AI Developer Tools</h3>
+          <p>Building AI systems that interact with terminals, filesystems, codebases, processes, and development environments through MCP.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--orange">
+            <i class="ph ph-chart-line-up"></i>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>Developing predictive ML systems for customer behavior, revenue forecasting, churn prediction, and operational decision-making.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--pink">
+            <i class="ph ph-clock-countdown"></i>
+          </div>
+          <h3>Time-Series Forecasting</h3>
+          <p>Building production forecasting systems involving temporal feature engineering, recursive forecasting, time-aware validation, and domain constraints.</p>
+        </div>
+        <div class="service-card glass-card">
+          <div class="service-card__icon service-card__icon--teal">
+            <i class="ph ph-cloud"></i>
+          </div>
+          <h3>Cloud AI</h3>
+          <p>Deploying scalable AI and ML systems using AWS, GCP, Azure, Docker, serverless services, and cloud-native architectures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-folder-notch-open"></i> Projects</span>
+        <h2 class="section__title">Featured<br><span class="gradient-text">Projects & Work</span></h2>
+      </div>
+
+      <!-- Project Filter -->
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="agentic">Agentic AI</button>
+        <button class="filter-btn" data-filter="rag">RAG & Knowledge</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="forecasting">Forecasting</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+      </div>
+
+      <div class="projects__grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card" data-category="agentic">
+          <div class="project-card__header">
+            <div class="project-card__number">01</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--purple">Agentic AI</span>
+              <span class="project-badge project-badge--blue">Multi-Agent</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Multi-Agent Real Estate AI Platform</h3>
+          <p class="project-card__desc">End-to-end multi-agent AI platform for real-estate sales automation — lead qualification, property discovery, recommendation, market intelligence, CRM automation, and real-time sales assistance.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> Conversational lead qualification agent</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> RAG-based objection handling</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Real-time AI Sales Coach</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> MCP-based structured tools</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FastAPI</span><span>MCP</span><span>FAISS</span><span>WebSockets</span><span>AWS</span><span>Docker</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Designed multiple specialized AI agents for different stages of the sales workflow.</li>
+              <li>Built a conversational lead qualification agent that progressively captures investment intent, budget, preferred location, property type, and layout.</li>
+              <li>Implemented property recommendation workflows using user preferences and market intelligence.</li>
+              <li>Integrated RAG and semantic similarity-based objection handling using an Acknowledge → Reformulate → Answer response workflow.</li>
+              <li>Developed an AI assistant that enables CRM operations through natural-language interaction.</li>
+              <li>Built a real-time AI Sales Coach that analyzes live conversation transcripts and provides context-aware responses.</li>
+              <li>Integrated MCP-based structured tools and Pydantic validation to separate LLM reasoning from tool execution.</li>
+              <li>Implemented asynchronous backend services and real-time communication using FastAPI and WebSockets.</li>
+              <li>Containerized AI services using Docker and designed the system for cloud deployment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card" data-category="agentic">
+          <div class="project-card__header">
+            <div class="project-card__number">02</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--green">Developer Tools</span>
+              <span class="project-badge project-badge--purple">MCP</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Claude-Code-Style Personal Terminal AI Agent</h3>
+          <p class="project-card__desc">AI developer and system automation agent that enables an LLM to interact directly with a local development environment through natural language.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> MCP server with system-level capabilities</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> File ops, shell commands, code execution</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Git automation & AST intelligence</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> AI-native OS interface</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>MCP</span><span>FastMCP</span><span>LangGraph</span><span>subprocess</span><span>psutil</span><span>AST</span><span>Git</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Developed an MCP server exposing system-level capabilities to an AI agent.</li>
+              <li>Implemented file and directory operations including reading, writing, editing, copying, moving, deleting, searching, and metadata inspection.</li>
+              <li>Implemented execution of shell commands, Python code, and scripts from the AI agent.</li>
+              <li>Added system-level tools for CPU, memory, disk, process, network-port, and system-information monitoring.</li>
+              <li>Designed the architecture for Git automation, background process management, filesystem watching, AST-based code intelligence, persistent memory, and real-time streaming.</li>
+              <li>Designed the system as an AI-native interface between natural language and the operating system.</li>
+              <li>Focused on building reusable tools consumable by different LLM-based agents.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card" data-category="agentic rag">
+          <div class="project-card__header">
+            <div class="project-card__number">03</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--cyan">RAG</span>
+              <span class="project-badge project-badge--orange">NLP</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Multilingual Educational RAG Platform</h3>
+          <p class="project-card__desc">Multilingual RAG-based educational AI assistant enabling children, parents, and educators to discover learning resources through natural-language interaction.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> FAISS vector search pipeline</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> LangGraph-based intent routing</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> ~40% faster response time</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> ~95% reduced reporting effort</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>FAISS</span><span>FastAPI</span><span>Azure</span><span>OpenAI</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Built a document-grounded retrieval pipeline using embeddings and FAISS vector search.</li>
+              <li>Implemented LangGraph-based intent routing for educational queries, resource discovery, translation, and pronunciation.</li>
+              <li>Integrated text-to-speech capabilities for pronunciation and accessibility.</li>
+              <li>Developed an automated student analytics and reporting system.</li>
+              <li>Improved response time by ~40% and increased engagement by ~35%.</li>
+              <li>Reduced manual student reporting effort by ~95% through automated analytics.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card" data-category="rag research">
+          <div class="project-card__header">
+            <div class="project-card__number">04</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--cyan">RAG</span>
+              <span class="project-badge project-badge--teal">Architecture</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">LLM Wiki — Structured Knowledge Retrieval</h3>
+          <p class="project-card__desc">Knowledge retrieval architecture organizing domain knowledge into self-contained, topic-centric Markdown pages instead of conventional embedding-based chunk retrieval.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> Self-contained knowledge pages</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> BM25 / TF-IDF keyword retrieval</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> YAML metadata & cross-references</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Reduced context fragmentation</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>Markdown</span><span>YAML</span><span>BM25</span><span>TF-IDF</span><span>RAG</span><span>Hybrid Search</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Designed a knowledge organization system where each page represents a complete, self-contained topic.</li>
+              <li>Added structured YAML frontmatter containing metadata such as keywords, topics, and relationships.</li>
+              <li>Implemented BM25 / TF-IDF keyword retrieval for identifying relevant knowledge pages.</li>
+              <li>Explored hybrid retrieval approaches combining keyword-based and semantic search.</li>
+              <li>Added cross-references between knowledge pages for follow-up retrieval.</li>
+              <li>Focused on human readability, explainability, maintainability, and context completeness.</li>
+              <li>Compared with knowledge-graph-based and Vector DB-based RAG approaches.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card glass-card" data-category="rag research">
+          <div class="project-card__header">
+            <div class="project-card__number">05</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--teal">Knowledge Graph</span>
+              <span class="project-badge project-badge--cyan">RAG</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">OKF — Open Knowledge Framework</h3>
+          <p class="project-card__desc">Entity-relation knowledge graph framework for representing domain knowledge through structured entities, concepts, and explicit relationships rather than embedding-based retrieval.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> Entity-based knowledge representation</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Graph traversal & multi-hop retrieval</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> No mandatory embeddings</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> High explainability</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>Knowledge Graphs</span><span>Graph Traversal</span><span>RAG</span><span>YAML</span><span>LLMs</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Designed a structured knowledge representation model around entities, concepts, and explicit relationships.</li>
+              <li>Designed typed relationships between knowledge entities for precise retrieval and multi-hop reasoning.</li>
+              <li>Implemented retrieval combining keyword matching with graph traversal.</li>
+              <li>Explored graph-enriched context generation for LLM applications.</li>
+              <li>Focused on context quality, explainability, and knowledge maintainability.</li>
+              <li>Compared OKF-based retrieval against LLM Wiki and Vector DB-based RAG architectures.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card glass-card" data-category="ml">
+          <div class="project-card__header">
+            <div class="project-card__number">06</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--orange">ML Pipeline</span>
+              <span class="project-badge project-badge--blue">Cloud</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Customer Lifetime Value Prediction</h3>
+          <p class="project-card__desc">Automated event-driven ML pipeline for predicting customer lifetime value across 30-day, 90-day, 180-day, and 13-month forecasting horizons.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> LightGBM classification + regression</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Multi-horizon LTV prediction</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> GCP cloud-native pipeline</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> ~90-110% forecast calibration</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>LightGBM</span><span>GCP</span><span>BigQuery</span><span>Cloud Functions</span><span>Pandas</span><span>NumPy</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Designed a cloud-native pipeline for processing acquisition and behavioral data.</li>
+              <li>Generated LTV predictions across 30-day, 90-day, 180-day, and 13-month horizons.</li>
+              <li>Developed a hybrid LightGBM classification + regression architecture.</li>
+              <li>Addressed long-horizon prediction challenges including forecast drift and recurring revenue patterns.</li>
+              <li>Integrated GCP services including BigQuery, Cloud Functions, and Cloud Storage.</li>
+              <li>Maintained forecast calibration within approximately 90–110% across multiple prediction horizons.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card glass-card" data-category="forecasting">
+          <div class="project-card__header">
+            <div class="project-card__number">07</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--pink">Forecasting</span>
+              <span class="project-badge project-badge--orange">Energy</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">ERCOT Energy Market Forecasting</h3>
+          <p class="project-card__desc">End-to-end ML forecasting pipelines for wholesale electricity markets — ancillary services and energy storage resource bidding behavior.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> 5-min telemetry → hourly forecasting</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> 14-segment bid curve prediction</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> CatBoost staged models</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Monotonicity constraints</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>CatBoost</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>PyArrow</span><span>Joblib</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Built automated pipelines to process raw 5-minute telemetry data into hourly forecasting datasets.</li>
+              <li>Developed forecasting systems for hourly Price/MW offer curves across ancillary services.</li>
+              <li>Built forecasting models for 14-segment energy storage bid curves.</li>
+              <li>Developed staged CatBoost regression and classification models.</li>
+              <li>Implemented monotonicity constraints and boundary validation for physically valid curves.</li>
+              <li>Used MAE-based evaluation to measure forecasting performance across individual resources.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card glass-card" data-category="forecasting">
+          <div class="project-card__header">
+            <div class="project-card__number">08</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--pink">Benchmarking</span>
+              <span class="project-badge project-badge--orange">Evaluation</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Forecasting Model Benchmarking & Evaluation</h3>
+          <p class="project-card__desc">Systematic benchmarking framework evaluating automated forecasting approaches against custom domain-specific ML pipelines over 168-hour horizons.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> 14-segment bid curve evaluation</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> 168-hour out-of-sample testing</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> MAE-based accuracy metrics</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Bid-curve monotonicity checks</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>FOUNT SDK</span><span>CatBoost</span><span>Pandas</span><span>Scikit-learn</span><span>MAE</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Performed strict time-based out-of-sample evaluation over a 168-hour / 7-day forecasting horizon.</li>
+              <li>Compared automated forecasting outputs against a custom CatBoost forecasting baseline.</li>
+              <li>Evaluated bid-curve monotonicity for required structural behavior.</li>
+              <li>Analyzed model performance across individual bid-curve segments.</li>
+              <li>Designed evaluation workflows preserving temporal ordering to avoid data leakage.</li>
+              <li>Provided insights into trade-offs between general-purpose and domain-specific ML pipelines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="project-card glass-card" data-category="ml">
+          <div class="project-card__header">
+            <div class="project-card__number">09</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--orange">Classification</span>
+              <span class="project-badge project-badge--blue">Databricks</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Customer Churn Prediction System</h3>
+          <p class="project-card__desc">Churn prediction system using policy, claims, payment, and behavioral data to identify customers at high risk of cancellation.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> Time-based validation</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Class imbalance handling</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> ~60% recall on churn class</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Proactive retention support</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Python</span><span>XGBoost</span><span>Databricks</span><span>PySpark</span><span>Pandas</span><span>Scikit-learn</span><span>SQL</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Performed feature engineering across policy, claims, payment, and behavioral datasets.</li>
+              <li>Implemented time-based validation to simulate real-world deployment scenarios.</li>
+              <li>Addressed severe class imbalance in the churn prediction problem.</li>
+              <li>Developed an XGBoost classification model for identifying high-risk customers.</li>
+              <li>Achieved approximately 60% recall on the churn class.</li>
+              <li>Built a workflow suitable for proactive retention and targeted intervention strategies.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="project-card glass-card" data-category="research">
+          <div class="project-card__header">
+            <div class="project-card__number">10</div>
+            <div class="project-card__badges">
+              <span class="project-badge project-badge--teal">IEEE</span>
+              <span class="project-badge project-badge--green">Assistive AI</span>
+            </div>
+          </div>
+          <h3 class="project-card__title">Smart Glasses with Voice Assistance & GPS</h3>
+          <p class="project-card__desc">Intelligent assistive smart-glasses system for improving independent mobility and accessibility for visually impaired users. Published at IEEE ICECCC 2025.</p>
+          <div class="project-card__highlights">
+            <div class="highlight"><i class="ph ph-check-circle"></i> Voice + GPS integration</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Wearable AI platform</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> IEEE ICECCC 2025 publication</div>
+            <div class="highlight"><i class="ph ph-check-circle"></i> Accessibility-first design</div>
+          </div>
+          <div class="project-card__tech">
+            <span>Voice AI</span><span>GPS</span><span>IoT</span><span>Speech Processing</span><span>Wearable Computing</span><span>AI</span>
+          </div>
+          <button class="project-card__expand" onclick="toggleProject(this)">
+            <span>View Details</span> <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="project-card__details">
+            <ul>
+              <li>Designed a wearable assistance system combining voice interaction and GPS-based location awareness.</li>
+              <li>Enabled users to interact through voice rather than conventional visual interfaces.</li>
+              <li>Designed the system to provide contextual assistance during navigation and movement.</li>
+              <li>Focused on accessibility, navigation, hands-free interaction, and independent mobility.</li>
+              <li>Combined AI-driven interaction with location-aware functionality.</li>
+              <li>Published at IEEE ICECCC 2025: "Smart Glasses with Voice Assistance and GPS for Independent Mobility of Blind People."</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-code"></i> Skills</span>
+        <h2 class="section__title">Technical<br><span class="gradient-text">Skill Set</span></h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--purple"><i class="ph ph-robot"></i></span>
+            <h3>AI & Generative AI</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>LLMs</span><span>Generative AI</span><span>Agentic AI</span><span>AI Agents</span><span>Multi-Agent Systems</span><span>Conversational AI</span><span>Prompt Engineering</span><span>Tool Calling</span><span>Context Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--blue"><i class="ph ph-git-merge"></i></span>
+            <h3>Agent Frameworks</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>LangGraph</span><span>LangChain</span><span>MCP</span><span>FastMCP</span><span>Agent Orchestration</span><span>Stateful Workflows</span><span>Agent Routing</span><span>Tool Execution</span><span>Agent Memory</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--cyan"><i class="ph ph-magnifying-glass"></i></span>
+            <h3>RAG & Retrieval</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>RAG</span><span>Advanced RAG</span><span>Hybrid Retrieval</span><span>FAISS</span><span>Vector Search</span><span>BM25</span><span>TF-IDF</span><span>Embeddings</span><span>Semantic Search</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--teal"><i class="ph ph-graph"></i></span>
+            <h3>Knowledge Engineering</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>Knowledge Graphs</span><span>Entity Extraction</span><span>Graph Traversal</span><span>Multi-Hop Retrieval</span><span>LLM Wiki</span><span>Ontology Design</span><span>Graph-Based RAG</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--orange"><i class="ph ph-chart-bar"></i></span>
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>Scikit-learn</span><span>XGBoost</span><span>LightGBM</span><span>CatBoost</span><span>Classification</span><span>Regression</span><span>Feature Engineering</span><span>Model Evaluation</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--pink"><i class="ph ph-trend-up"></i></span>
+            <h3>Time-Series & Forecasting</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>Time-Series Forecasting</span><span>Recursive Forecasting</span><span>Temporal Features</span><span>Bid-Curve Forecasting</span><span>MAE Evaluation</span><span>Monotonicity Constraints</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--green"><i class="ph ph-terminal"></i></span>
+            <h3>Backend & APIs</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>Python</span><span>FastAPI</span><span>REST APIs</span><span>WebSockets</span><span>Pydantic</span><span>Async Python</span><span>Microservices</span><span>API Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--blue"><i class="ph ph-cloud"></i></span>
+            <h3>Cloud & MLOps</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>AWS</span><span>GCP</span><span>Azure</span><span>BigQuery</span><span>Databricks</span><span>Docker</span><span>Cloud Functions</span><span>Serverless</span><span>ML Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category__header">
+            <span class="skill-category__icon skill-category__icon--orange"><i class="ph ph-database"></i></span>
+            <h3>Data Engineering</h3>
+          </div>
+          <div class="skill-category__tags">
+            <span>Pandas</span><span>NumPy</span><span>PySpark</span><span>PyArrow</span><span>SQL</span><span>BigQuery</span><span>Data Processing</span><span>Feature Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-briefcase"></i> Experience</span>
+        <h2 class="section__title">Professional<br><span class="gradient-text">Journey</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item glass-card">
+          <div class="timeline__dot"></div>
+          <div class="timeline__role">
+            <h3>NLP Engineer / AI Engineer</h3>
+            <span class="timeline__focus">AI & Machine Learning Engineering</span>
+          </div>
+          <ul class="timeline__list">
+            <li>Built and deployed production-ready Generative AI and NLP systems.</li>
+            <li>Developed multi-agent architectures using LangGraph and LangChain.</li>
+            <li>Designed RAG pipelines using embeddings, vector databases, keyword search, and hybrid retrieval.</li>
+            <li>Developed MCP-based tool integrations for reliable LLM-to-system communication.</li>
+            <li>Built FastAPI-based AI microservices and real-time applications.</li>
+            <li>Developed ML pipelines for LTV prediction and customer churn.</li>
+            <li>Built time-series forecasting pipelines for energy-market applications.</li>
+            <li>Worked on real-time conversational AI and call-intelligence systems.</li>
+            <li>Designed AI workflows executing business operations through natural language.</li>
+            <li>Built production AI systems with emphasis on reliability, latency, validation, and scalability.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education, Publications, Certifications -->
+  <section class="section credentials" id="credentials">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-graduation-cap"></i> Credentials</span>
+        <h2 class="section__title">Education, Publications<br>& <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="credentials__grid">
+        <!-- Education -->
+        <div class="credential-card glass-card">
+          <div class="credential-card__icon credential-card__icon--purple">
+            <i class="ph ph-graduation-cap"></i>
+          </div>
+          <span class="credential-card__type">Education</span>
+          <h3>Bachelor of Technology</h3>
+          <p class="credential-card__subtitle">Computer Science & Engineering /<br>Artificial Intelligence & Machine Learning</p>
+          <div class="credential-card__meta">
+            <span><i class="ph ph-buildings"></i> Usha Rama College of Engineering & Technology</span>
+            <span><i class="ph ph-certificate"></i> JNTUK</span>
+            <span><i class="ph ph-calendar"></i> 2022 – 2026</span>
+          </div>
+        </div>
+
+        <!-- Publication -->
+        <div class="credential-card glass-card credential-card--highlight">
+          <div class="credential-card__icon credential-card__icon--cyan">
+            <i class="ph ph-article"></i>
+          </div>
+          <span class="credential-card__type">IEEE Publication</span>
+          <h3>Smart Glasses with Voice Assistance and GPS</h3>
+          <p class="credential-card__subtitle">For Independent Mobility of Blind People</p>
+          <div class="credential-card__meta">
+            <span><i class="ph ph-newspaper-clipping"></i> IEEE ICECCC 2025</span>
+            <span><i class="ph ph-tag"></i> Research Publication / Final Year Project</span>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="credential-card glass-card">
+          <div class="credential-card__icon credential-card__icon--green">
+            <i class="ph ph-seal-check"></i>
+          </div>
+          <span class="credential-card__type">Certifications</span>
+          <h3>AI & Cloud Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <i class="ph ph-check-circle"></i>
+              <div>
+                <strong>Generative AI Fundamentals</strong>
+                <span>Databricks</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="ph ph-check-circle"></i>
+              <div>
+                <strong>Introduction to Generative AI</strong>
+                <span>Google Cloud</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="ph ph-check-circle"></i>
+              <div>
+                <strong>Generative AI for Developers</strong>
+                <span>Google Cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag"><i class="ph ph-envelope"></i> Contact</span>
+        <h2 class="section__title">Let's Build Something<br><span class="gradient-text">Amazing Together</span></h2>
+        <p class="section__desc">Interested in working together on Agentic AI, RAG, or production ML systems? Let's connect.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__links">
+          <a href="https://github.com/Gopikanth123" target="_blank" class="contact-link glass-card">
+            <i class="ph ph-github-logo"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>github.com/Gopikanth123</span>
+            </div>
+            <i class="ph ph-arrow-up-right"></i>
+          </a>
+          <a href="https://linkedin.com/in/gopikanth-tirumani" target="_blank" class="contact-link glass-card">
+            <i class="ph ph-linkedin-logo"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>Gopikanth Tirumani</span>
+            </div>
+            <i class="ph ph-arrow-up-right"></i>
+          </a>
+          <a href="mailto:gopikanthtirumani@gmail.com" class="contact-link glass-card">
+            <i class="ph ph-envelope-simple"></i>
+            <div>
+              <strong>Email</strong>
+              <span>gopikanthtirumani@gmail.com</span>
+            </div>
+            <i class="ph ph-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <span class="nav__logo-bracket">&lt;</span>GT<span class="nav__logo-bracket"> /&gt;</span>
+        </div>
+        <p class="footer__text">Designed & Built by Gopikanth Tirumani</p>
+        <p class="footer__copyright">&copy; 2025 Gopikanth Tirumani. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
