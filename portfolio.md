@@ -10,13 +10,13 @@
 # 1. Identity
 
 **Name:** Gopikanth Tirumani
-**Title:** NLP Engineer · Generative AI & Agentic AI Engineer
-**Current Role:** NLP Engineer, RedFerns Tech
-**Experience:** 1+ Year (Production AI Systems)
+**Title:** Senior NLP Engineer · Generative AI & Agentic AI Engineer
+**Current Role:** Senior NLP Engineer, RedFerns Tech
+**Experience:** 1.5+ Years (Production AI Systems)
 **Location:** India
 
 **Positioning statement:**
-> An NLP Engineer who ships production AI systems — not demos. Specializes in agentic
+> A Senior NLP Engineer who ships production AI systems — not demos. Specializes in agentic
 > architectures, multi-agent orchestration, retrieval systems, and the infrastructure
 > that keeps LLM-driven software reliable under real traffic.
 
@@ -42,11 +42,7 @@ MCP, NLP, Machine Learning, Real-Time AI, and Cloud-Native Architecture.
 
 # 3. About Me
 
-I'm an NLP Engineer who builds AI systems that reason, retrieve, and act — not just
-generate text. My work sits at the intersection of **LLM orchestration, retrieval
-architecture, tool calling, and cloud infrastructure**, with a strong bias toward
-systems that hold up in production: validated inputs, bounded latency, observable
-failure modes, and graceful degradation.
+I'm a Senior NLP Engineer with 1.5+ years of experience designing and developing production-ready Generative AI, Agentic AI, RAG, and machine-learning systems. My work sits at the intersection of **LLM orchestration, retrieval architecture, tool calling, and cloud infrastructure**, with a strong bias toward systems that hold up in production: validated inputs, bounded latency, observable failure modes, and graceful degradation.
 
 I've shipped AI systems across:
 
@@ -80,23 +76,16 @@ Time-Series Forecasting · AI System Architecture.
 
 # 5. Professional Experience
 
-## NLP Engineer — RedFerns Tech
+## Senior NLP Engineer — RedFerns Tech
 **2025 – Present**
 
-Working in AI & Data Science on production-oriented Generative AI, Agentic AI, NLP,
-RAG, and Machine Learning systems.
+Design and develop production-ready Generative AI and Agentic AI applications across real-estate, education, and enterprise workflow domains.
 
+- Architect multi-agent and RAG systems using LangGraph, LangChain, FAISS, OpenAI embeddings, BM25/TF-IDF, and Redis.
+- Build MCP-based tool integrations with Pydantic-validated schemas for controlled interaction between LLM agents and business systems.
+- Develop FastAPI and WebSocket-based AI services along with machine-learning pipelines for customer lifetime value, churn prediction, and time-series forecasting.
+- Deploy and support cloud-based AI solutions across AWS and GCP, using Docker and LangSmith for deployment, tracing, debugging, and performance monitoring.
 - Design and ship production-ready Generative AI applications end to end.
-- Build multi-agent architectures using LangGraph and LangChain.
-- Develop RAG systems spanning vector, keyword, and hybrid retrieval.
-- Design MCP-based tool integrations for reliable LLM-to-system communication.
-- Build FastAPI backends and real-time (WebSocket) AI services.
-- Build agents that execute real business workflows through natural language.
-- Design structured tool interfaces with Pydantic validation.
-- Build machine-learning pipelines for predictive analytics and forecasting.
-- Develop multilingual NLP systems: translation, summarization, text-to-speech.
-- Design scalable, cloud-native AI architecture with reliability and latency as
-  first-class constraints, not afterthoughts.
 
 *(Full project write-ups and per-project architecture diagrams live in
 `project_description.md`.)*
@@ -113,20 +102,18 @@ Lakireddy Bali Reddy College of Engineering (LBRCE)
 
 # 7. Publications
 
-**Smart Glasses with Voice Assistance and GPS for Independent Mobility of Blind People**
-IEEE ICECCC 2025 · Final Year Project / Research Publication
+**Smart Glasses with Voice Assistance and GPS for Independent Mobility of the Blind People**
+IEEE ICECCC 2025 · Research Publication · DOI: [10.1109/ICECCC65144.2025.11064275](https://doi.org/10.1109/ICECCC65144.2025.11064275) · [IEEE Xplore](https://ieeexplore.ieee.org/document/11064275)
 
-An assistive smart-glasses system combining voice interaction and GPS-based location
-awareness to give visually impaired users contextual assistance while navigating
-real-world environments.
+An intelligent wearable assistive smart-glasses system integrating multi-modal perception (ultrasonic obstacle detection, computer vision object identification, OCR text extraction), GPS location tracking, and conversational AI voice assistance (STT/TTS) on Raspberry Pi edge computing to provide independent mobility and safety for visually impaired individuals.
 
-**Focus areas:** Voice AI · Assistive Technology · GPS · Wearable Computing ·
-Speech Processing · IoT
+**Focus areas:** Assistive AI · Computer Vision · OCR · Embedded Systems (Raspberry Pi) · Ultrasonic Sensing · GPS Navigation · Voice AI (STT/TTS) · Wearable IoT
 
 ---
 
 # 8. Certifications
 
+- **Salesforce Certified AI Associate** — Salesforce
 - **Generative AI Fundamentals** — Databricks
 - **Introduction to Generative AI** — Google Cloud
 - **Generative AI for Developers** — Google Cloud
@@ -139,6 +126,7 @@ Speech Processing · IoT
 
 - Built production-oriented AI systems across real estate, education, energy, and
   customer-analytics domains.
+- Built a multi-agent autonomous software engineering platform (Agentic Development Environment) with LangGraph and MCP.
 - Developed multi-agent systems using LangGraph and LangChain.
 - Developed MCP-based AI tools for system-level and developer automation.
 - Built advanced RAG architectures spanning vector search, keyword retrieval,
@@ -194,10 +182,10 @@ Learning, or intelligent automation.
 # 13. SEO
 
 **Page Title:**
-`Gopikanth Tirumani | NLP Engineer | Generative AI & Agentic AI`
+`Gopikanth Tirumani | Senior NLP Engineer | Generative AI & Agentic AI`
 
 **Meta Description:**
-`Gopikanth Tirumani is an NLP Engineer specializing in Generative AI, Agentic AI, Multi-Agent Systems, RAG, MCP, and Machine Learning — building production AI systems.`
+`Gopikanth Tirumani is a Senior NLP Engineer specializing in Generative AI, Agentic AI, Multi-Agent Systems, RAG, MCP, Machine Learning, and production AI systems.`
 
 **Keywords:**
 NLP Engineer · AI Engineer · Generative AI Engineer · Agentic AI Engineer · LLM

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gopikanth Tirumani — Senior NLP Engineer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       GOLD-STANDARD ATS-OPTIMIZED TECH RESUME (Jake's Resume / Single-Column LaTeX Inspired)
+       ========================================================================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      color: #111827;
+      background: #F3F4F6;
+      line-height: 1.38;
+      font-size: 9.3pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Print / PDF Document Container */
+    .resume-page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      padding: 12mm 15mm;
+      background: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+      }
+      .resume-page {
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none !important;
+      }
+      @page {
+        size: A4 portrait;
+        margin: 8mm 10mm 8mm 10mm;
+      }
+    }
+
+    /* Floating Toolbar */
+    .toolbar {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+      background: #111827;
+      padding: 6px 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .toolbar button {
+      background: #2563EB;
+      color: #FFFFFF;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .toolbar button:hover {
+      background: #1D4ED8;
+    }
+
+    .toolbar a {
+      color: #9CA3AF;
+      text-decoration: none;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding: 6px 8px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .toolbar a:hover {
+      color: #FFFFFF;
+    }
+
+    /* Header — Clean, Centered Classic Format */
+    .header {
+      text-align: center;
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+    }
+
+    .header-name {
+      font-size: 19pt;
+      font-weight: 800;
+      color: #000000;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .header-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #2563EB;
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .header-contacts {
+      font-size: 8.6pt;
+      color: #374151;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .header-contacts a {
+      color: #1F2937;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .header-contacts a:hover {
+      color: #2563EB;
+      text-decoration: underline;
+    }
+
+    .header-contacts .sep {
+      color: #9CA3AF;
+    }
+
+    /* Section Heading */
+    .section-title {
+      font-size: 9.8pt;
+      font-weight: 800;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1.2px solid #111827;
+      padding-bottom: 2px;
+      margin-top: 8px;
+      margin-bottom: 5px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 8.8pt;
+      color: #374151;
+      line-height: 1.36;
+      margin-bottom: 4px;
+      text-align: justify;
+    }
+
+    /* Technical Skills Section */
+    .skills-list {
+      margin-bottom: 6px;
+    }
+
+    .skills-item {
+      font-size: 8.8pt;
+      margin-bottom: 2.5px;
+      line-height: 1.34;
+      color: #1F2937;
+    }
+
+    .skills-item strong {
+      color: #000000;
+      font-weight: 700;
+    }
+
+    /* Experience & Project Blocks */
+    .entry-block {
+      margin-bottom: 7px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .entry-title-left {
+      font-size: 9.3pt;
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .entry-role {
+      font-weight: 600;
+      color: #1F2937;
+    }
+
+    .entry-date {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: #374151;
+      text-align: right;
+      font-feature-settings: "tnum";
+    }
+
+    .entry-subheader {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 8.4pt;
+      color: #4B5563;
+      margin-bottom: 2px;
+    }
+
+    .entry-tech {
+      font-weight: 600;
+      color: #2563EB;
+      font-size: 8.2pt;
+    }
+
+    /* Bullet Points */
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 15px;
+      margin-top: 1.5px;
+    }
+
+    .bullet-list li {
+      font-size: 8.7pt;
+      color: #374151;
+      margin-bottom: 2px;
+      line-height: 1.34;
+    }
+
+    .bullet-list li strong {
+      color: #111827;
+      font-weight: 600;
+    }
+
+    /* Certifications & Education Compact List */
+    .compact-entry {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.7pt;
+      margin-bottom: 2px;
+      line-height: 1.32;
+      color: #374151;
+    }
+
+    .compact-entry strong {
+      color: #000000;
+      font-weight: 600;
+    }
+
+    .compact-date {
+      color: #4B5563;
+      font-weight: 600;
+      font-size: 8.5pt;
+      flex-shrink: 0;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Print Bar -->
+  <div class="toolbar no-print">
+    <button onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      Print / Save PDF
+    </button>
+    <a href="index.html">← Back to Portfolio</a>
+  </div>
+
+  <div class="resume-page">
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header-name">Gopikanth Tirumani</h1>
+      <div class="header-title">Senior NLP Engineer | Generative AI &amp; Agentic AI Engineer</div>
+      <div class="header-contacts">
+        <a href="mailto:gopikanthtirumani@gmail.com">gopikanthtirumani@gmail.com</a>
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/gopikanthtirumani" target="_blank">linkedin.com/in/gopikanthtirumani</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/Gopikanth123" target="_blank">github.com/Gopikanth123</a>
+        <span class="sep">|</span>
+        <a href="https://gopikanth123.github.io" target="_blank">gopikanth123.github.io</a>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section>
+      <h2 class="section-title">Summary</h2>
+      <p class="summary-text">
+        Senior NLP Engineer with 1.5+ years of experience designing and developing production-ready Generative AI, Agentic AI, RAG, and machine-learning systems. Hands-on expertise in LangGraph, LangChain, Model Context Protocol (MCP), multi-agent orchestration, hybrid retrieval, LLM tool calling, and FastAPI-based AI services. Experienced in designing end-to-end AI workflows, integrating business tools through controlled interfaces, and deploying AI solutions across AWS and GCP with observability and performance monitoring.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skills-item">
+          <strong>Generative AI &amp; Agentic AI:</strong> Multi-Agent Systems, LangGraph, LangChain, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), LLM Tool Calling, Prompt Engineering, Knowledge Graph RAG.
+        </div>
+        <div class="skills-item">
+          <strong>Languages &amp; Backend:</strong> Python, FastAPI, Pydantic, WebSockets, SQL, REST APIs.
+        </div>
+        <div class="skills-item">
+          <strong>Retrieval &amp; Data:</strong> FAISS, OpenAI Embeddings, BM25/TF-IDF, Redis, Vector Search.
+        </div>
+        <div class="skills-item">
+          <strong>Machine Learning:</strong> XGBoost, LightGBM, CatBoost, Scikit-learn, PySpark, Time-Series Forecasting.
+        </div>
+        <div class="skills-item">
+          <strong>Cloud &amp; Infrastructure:</strong> AWS, GCP (BigQuery, Cloud Functions, Cloud Storage), Docker, LangSmith, Git.
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="entry-block">
+        <div class="entry-header">
+          <div class="entry-title-left">
+            <span>Senior NLP Engineer</span> &mdash; <span class="entry-role">RedFerns Tech</span>
+          </div>
+          <span class="entry-date">2025 &ndash; Present</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Design and develop production-ready Generative AI and Agentic AI applications across real-estate, education, and enterprise workflow domains.</li>
+          <li>Architect multi-agent and RAG systems using <strong>LangGraph, LangChain, FAISS, OpenAI embeddings, BM25/TF-IDF, and Redis</strong>.</li>
+          <li>Build <strong>MCP-based tool integrations</strong> with Pydantic-validated schemas for controlled interaction between LLM agents and business systems.</li>
+          <li>Develop <strong>FastAPI and WebSocket-based AI services</strong> along with machine-learning pipelines for customer lifetime value, churn prediction, and time-series forecasting.</li>
+          <li>Deploy and support cloud-based AI solutions across <strong>AWS and GCP</strong>, using Docker and LangSmith for deployment, tracing, debugging, and performance monitoring.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section>
+      <h2 class="section-title">Key Projects</h2>
+
+      <!-- Project 1: Multi-Agent Real Estate AI Platform -->
+      <div class="entry-block">
+        <div class="entry-header">
+          <span class="entry-title-left">Multi-Agent Real Estate AI Platform</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="entry-tech">Tech Stack: Python, LangChain, LangGraph, FastAPI, MCP, FAISS, Redis, LangSmith, AWS, Docker</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Built a multi-agent real estate AI platform with specialized Broker Assistant, Sales Assistant, and On-Call Broker Assistant agents supporting CRM operations, lead qualification, property discovery, and sales workflows.</li>
+          <li>Architected LangGraph-based agentic workflows with MCP integrations for CRM management, property search, scheduling, market analytics, and automated business operations.</li>
+          <li>Implemented RAG and semantic matching using FAISS with Redis caching for objection handling, property recommendations, market intelligence, and conversational context.</li>
+          <li>Implemented PII masking and secure tool execution across agent workflows, while developing real-time WebSocket-based on-call assistance with Docker and LangSmith for deployment, tracing, and observability.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: Agentic Development Environment -->
+      <div class="entry-block">
+        <div class="entry-header">
+          <span class="entry-title-left">Agentic Development Environment</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="entry-tech">Tech Stack: Python, LangGraph, LangChain, MCP, FastMCP, FastAPI, WebSockets, Docker, Git, LangSmith</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Built a multi-agent agentic development environment using LangGraph with specialized agents for task planning, repository analysis, code generation, review, testing, debugging, security validation, and execution.</li>
+          <li>Developed an MCP-based tool ecosystem enabling agents to create and modify files, execute Python and shell scripts, inspect repositories, run tests, perform Git operations, and manage Docker-based workloads.</li>
+          <li>Implemented human-in-the-loop execution controls with tool-level permissions, command validation, approval gates, and sandboxed execution for sensitive system and repository operations.</li>
+          <li>Designed closed-loop agent workflows that plan tasks, execute actions, analyze results, recover from failures, and iteratively validate outcomes, with WebSocket-based real-time execution updates and LangSmith tracing.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: Multilingual Educational RAG Platform -->
+      <div class="entry-block">
+        <div class="entry-header">
+          <span class="entry-title-left">Multilingual Educational RAG Platform</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="entry-tech">Tech Stack: Python, LangChain, LangGraph, FAISS, FastAPI, AWS, Redis, LangSmith</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Built a document-grounded RAG assistant with LangGraph-based intent routing for resource discovery, translation, and pronunciation assistance.</li>
+          <li>Implemented automated FAISS embedding-refresh pipelines to keep the retrieval layer synchronized with updated knowledge sources.</li>
+          <li>Added Redis caching for frequently requested RAG, translation, and text-to-speech responses, with LangSmith tracing for workflow monitoring.</li>
+          <li>Built an automated student-analytics system generating LLM-based performance summaries, reducing reporting effort by ~95%, improving response time by ~40%, and increasing engagement by ~35%.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4: Customer Lifetime Value Prediction Pipeline -->
+      <div class="entry-block">
+        <div class="entry-header">
+          <span class="entry-title-left">Customer Lifetime Value Prediction Pipeline</span>
+        </div>
+        <div class="entry-subheader">
+          <span class="entry-tech">Tech Stack: Python, LightGBM, GCP, BigQuery, Cloud Functions, Cloud Storage, Pandas, NumPy, Joblib</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Built an event-driven GCP machine-learning pipeline to predict customer lifetime value across 30-day, 90-day, 180-day, and 13-month horizons.</li>
+          <li>Developed a hybrid LightGBM classification + regression architecture, combining payment probability with predicted revenue to generate long-term customer value forecasts.</li>
+          <li>Integrated BigQuery, Cloud Functions, and Cloud Storage for data processing, model artifacts, and scheduled pipeline execution, maintaining forecast calibration within approximately 90–110% across prediction horizons.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="compact-entry">
+        <div><strong>Bachelor of Technology (B.Tech)</strong> &mdash; Lakireddy Bali Reddy College of Engineering (CGPA: <strong>8.99 / 10</strong>)</div>
+        <span class="compact-date">2021 &ndash; 2025</span>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <h2 class="section-title">Certifications</h2>
+      <div class="compact-entry">
+        <div><strong>Salesforce Certified AI Associate</strong> &mdash; Salesforce</div>
+      </div>
+      <div class="compact-entry">
+        <div><strong>Generative AI Fundamentals</strong> &mdash; Databricks</div>
+      </div>
+      <div class="compact-entry">
+        <div><strong>Introduction to Generative AI</strong> &mdash; Google Cloud</div>
+      </div>
+      <div class="compact-entry">
+        <div><strong>Generative AI for Developers</strong> &mdash; Google Cloud</div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section>
+      <h2 class="section-title">Publications</h2>
+      <div class="compact-entry">
+        <div>
+          <strong>Smart Glasses with Voice Assistance and GPS for Independent Mobility of the Blind People</strong><br>
+          <span style="font-size: 8.2pt; color: #4B5563;">IEEE ICECCC 2025 &bull; DOI: 10.1109/ICECCC65144.2025.11064275 &bull; IEEE Xplore</span>
+        </div>
+        <span class="compact-date">2025</span>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

@@ -500,338 +500,116 @@ ul { list-style: none; }
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 560px;
-}
-
-.brain-constellation {
-  position: relative;
-  width: 560px;
-  height: 560px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.synapse-svg {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
 }
 
-/* Synapse Lines & Animated Dashes */
-.syn-line {
-  stroke-dasharray: 8 6;
-  animation: flowSynapse 20s linear infinite;
-}
-
-.syn-line--1 { animation-duration: 18s; }
-.syn-line--2 { animation-duration: 22s; }
-.syn-line--3 { animation-duration: 20s; }
-.syn-line--4 { animation-duration: 24s; }
-
-@keyframes flowSynapse {
-  to {
-    stroke-dashoffset: -200;
-  }
-}
-
-/* Orbit Rotations */
-.spin-slow {
-  transform-origin: 280px 280px;
-  animation: spinClockwise 45s linear infinite;
-}
-
-.spin-reverse {
-  transform-origin: 280px 280px;
-  animation: spinCounterClockwise 35s linear infinite;
-}
-
-@keyframes spinClockwise {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes spinCounterClockwise {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(0deg); }
-}
-
-/* Radar Sonar Ping around Endpoints */
-.ping-circle {
-  animation: pingSonar 2.8s ease-out infinite;
-  transform-origin: center;
-}
-
-@keyframes pingSonar {
-  0% { transform: scale(0.6); opacity: 0.8; }
-  100% { transform: scale(2.2); opacity: 0; }
-}
-
-/* Moving Sparkle Particles along paths */
-.moving-sparkle--1 { animation: sparkleTravel1 3.8s ease-in-out infinite; }
-.moving-sparkle--2 { animation: sparkleTravel2 4s ease-in-out infinite 0.6s; }
-.moving-sparkle--3 { animation: sparkleTravel3 4.2s ease-in-out infinite 1.2s; }
-.moving-sparkle--4 { animation: sparkleTravel4 4.5s ease-in-out infinite 1.8s; }
-.moving-sparkle--5 { animation: sparkleTravel5 4.1s ease-in-out infinite 2.4s; }
-.moving-sparkle--6 { animation: sparkleTravel6 4.3s ease-in-out infinite 3.0s; }
-
-@keyframes sparkleTravel1 {
-  0% { cx: 335px; cy: 205px; opacity: 0; }
-  25% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { cx: 440px; cy: 90px; opacity: 0; }
-}
-
-@keyframes sparkleTravel2 {
-  0% { cx: 270px; cy: 180px; opacity: 0; }
-  25% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { cx: 270px; cy: 45px; opacity: 0; }
-}
-
-@keyframes sparkleTravel3 {
-  0% { cx: 205px; cy: 205px; opacity: 0; }
-  25% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { cx: 100px; cy: 90px; opacity: 0; }
-}
-
-@keyframes sparkleTravel4 {
-  0% { cx: 180px; cy: 265px; opacity: 0; }
-  25% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { cx: 70px; cy: 265px; opacity: 0; }
-}
-
-@keyframes sparkleTravel5 {
-  0% { cx: 205px; cy: 335px; opacity: 0; }
-  25% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { cx: 80px; cy: 440px; opacity: 0; }
-}
-
-@keyframes sparkleTravel6 {
-  0% { cx: 335px; cy: 335px; opacity: 0; }
-  25% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { cx: 460px; cy: 440px; opacity: 0; }
-}
-
-/* Central Compact Avatar Core (165px with Generous Orbit Room) */
-.avatar-core-pod {
+/* --- Clean, Sleek, Professional Portrait Frame --- */
+.portrait-container {
   position: relative;
-  width: 165px;
-  height: 165px;
-  border-radius: 50%;
-  z-index: 3;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.avatar-core-photo {
+.portrait-ambient-glow {
+  position: absolute;
+  width: 440px;
+  height: 520px;
+  background: radial-gradient(
+    circle at center,
+    rgba(124, 140, 255, 0.28) 0%,
+    rgba(168, 85, 247, 0.18) 35%,
+    rgba(79, 209, 197, 0.08) 60%,
+    transparent 75%
+  );
+  filter: blur(50px);
+  z-index: 0;
+  pointer-events: none;
+  animation: ambientFloat 8s ease-in-out infinite alternate;
+}
+
+@keyframes ambientFloat {
+  0% { transform: scale(0.92) translate(0, 0); opacity: 0.65; }
+  50% { transform: scale(1.05) translate(4px, -6px); opacity: 0.9; }
+  100% { transform: scale(0.95) translate(-4px, 4px); opacity: 0.75; }
+}
+
+.portrait-card {
+  position: relative;
+  z-index: 2;
+  width: 370px;
+  height: 450px;
+  border-radius: 28px;
+  padding: 10px;
+  background: rgba(14, 17, 26, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75),
+              0 0 40px rgba(124, 140, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+.portrait-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(124, 140, 255, 0.4);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.85),
+              0 0 60px rgba(124, 140, 255, 0.25);
+}
+
+.portrait-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(168, 85, 247, 0.45);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8),
-              0 0 35px rgba(168, 85, 247, 0.3);
-  position: relative;
-  z-index: 2;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.quantum-aura {
+.portrait-badge {
   position: absolute;
-  inset: -12px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.4), rgba(6, 182, 212, 0.18), transparent 70%);
-  z-index: 1;
-  animation: pulseQuantum 4s ease-in-out infinite alternate;
-}
-
-@keyframes pulseQuantum {
-  0% { transform: scale(0.95); opacity: 0.6; }
-  100% { transform: scale(1.08); opacity: 1; filter: blur(4px); }
-}
-
-.quantum-ring {
-  position: absolute;
-  inset: -7px;
-  border-radius: 50%;
-  border: 1px dashed rgba(99, 102, 241, 0.4);
-  pointer-events: none;
-  z-index: 2;
-  animation: spinClockwise 25s linear infinite;
-}
-
-.core-telemetry {
-  position: absolute;
-  bottom: -10px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(12, 14, 21, 0.96);
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  padding: 4px 12px;
-  border-radius: 100px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  z-index: 4;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  gap: 8px;
+  background: rgba(10, 12, 18, 0.95);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 7px 16px;
+  border-radius: 100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
   white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: 0.03em;
+  z-index: 4;
 }
 
-.tele-dot {
-  width: 6px;
-  height: 6px;
+.portrait-beacon {
+  width: 7px;
+  height: 7px;
   background: var(--green);
   border-radius: 50%;
   box-shadow: 0 0 8px var(--green);
-  animation: pulseStatus 2s infinite ease-in-out;
+  animation: beaconPulse 2s infinite ease-in-out;
 }
 
-.tele-text {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: var(--text-main);
-  letter-spacing: 0.08em;
+@keyframes beaconPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.75); }
 }
 
-/* 6 Sleek Compact Radiating Cognitive Synapse Pods */
-.synapse-pod {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 5px 10px;
-  border-radius: 8px;
-  background: rgba(13, 16, 25, 0.94);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  z-index: 4;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.25s ease,
-              box-shadow 0.25s ease;
-  white-space: nowrap;
-}
-
-.synapse-pod:hover {
-  transform: translateY(-2px) scale(1.04);
-  border-color: var(--purple);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.7),
-              0 0 16px rgba(168, 85, 247, 0.25);
-}
-
-.syn-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.82rem;
-  flex-shrink: 0;
-}
-
-.syn-icon--purple { background: var(--purple-soft); color: var(--purple); }
-.syn-icon--indigo { background: rgba(99, 102, 241, 0.15); color: #818CF8; }
-.syn-icon--cyan { background: var(--cyan-soft); color: var(--cyan); }
-.syn-icon--amber { background: rgba(245, 158, 11, 0.15); color: #FBBF24; }
-.syn-icon--green { background: var(--green-soft); color: var(--green); }
-.syn-icon--pink { background: var(--pink-soft); color: var(--pink); }
-
-.syn-data {
-  display: flex;
-  flex-direction: column;
-}
-
-.syn-label {
-  font-family: var(--font-mono);
-  font-size: 0.52rem;
-  font-weight: 700;
-  color: var(--text-dim);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
-.syn-title {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--text-main);
-  line-height: 1.15;
-  margin: 1px 0;
-}
-
-.syn-status {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  color: var(--text-muted);
-  line-height: 1;
-}
-
-.mini-dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-}
-
-.mini-dot--purple { background: var(--purple); box-shadow: 0 0 5px var(--purple); }
-.mini-dot--indigo { background: #818CF8; box-shadow: 0 0 5px #818CF8; }
-.mini-dot--cyan { background: var(--cyan); box-shadow: 0 0 5px var(--cyan); }
-.mini-dot--amber { background: #FBBF24; box-shadow: 0 0 5px #FBBF24; }
-.mini-dot--green { background: var(--green); box-shadow: 0 0 5px var(--green); }
-.mini-dot--pink { background: var(--pink); box-shadow: 0 0 5px var(--pink); }
-
-/* Pod Positions */
-.synapse-pod--top-center {
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.synapse-pod--top-center:hover {
-  transform: translateX(-50%) translateY(-2px) scale(1.04);
-}
-
-.synapse-pod--top-right {
-  top: 50px;
-  right: -15px;
-}
-
-.synapse-pod--top-left {
-  top: 50px;
-  left: -15px;
-}
-
-.synapse-pod--mid-left {
-  top: 50%;
-  left: -45px;
-  transform: translateY(-50%);
-}
-
-.synapse-pod--mid-left:hover {
-  transform: translateY(-50%) translateY(-2px) scale(1.04);
-}
-
-.synapse-pod--bottom-left {
-  bottom: 50px;
-  left: -15px;
-}
-
-.synapse-pod--bottom-right {
-  bottom: 50px;
-  right: -15px;
+@media (prefers-reduced-motion: reduce) {
+  .portrait-ambient-glow { animation: none; }
+  .portrait-beacon { animation: none; }
+  .portrait-card { transition: none; }
 }
 
 /* ---------- Metrics Section ---------- */
@@ -1938,13 +1716,10 @@ ul { list-style: none; }
   }
 
   .hero__visual {
-    order: -1;
-    min-height: 480px;
-  }
-
-  .brain-constellation {
-    width: 480px;
-    height: 480px;
+    order: 1;
+    min-height: auto;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .about-grid {
@@ -2061,67 +1836,29 @@ ul { list-style: none; }
     font-size: 0.68rem;
   }
 
-  /* Hero Visual & Cognitive Synapse Grid on Mobile */
+  /* Hero Visual on Mobile */
   .hero__visual {
+    order: 1;
     min-height: auto;
     width: 100%;
+    margin-top: 20px;
   }
 
-  .brain-constellation {
-    width: 100%;
-    max-width: 380px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+  .portrait-card {
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
   }
 
-  .synapse-svg {
-    display: none; /* Hide absolute SVG to prevent mobile overflow */
+  .portrait-ambient-glow {
+    width: 260px;
+    height: 300px;
   }
 
-  .avatar-core-pod {
-    width: 135px;
-    height: 135px;
-    margin-bottom: 6px;
-  }
-
-  .avatar-core-photo {
-    border-width: 2px;
-  }
-
-  .core-telemetry {
-    bottom: -8px;
-    padding: 3px 10px;
-    font-size: 0.6rem;
-  }
-
-  /* 2-Column Responsive Cognitive Pods Grid */
-  .synapse-pod {
-    position: static !important;
-    transform: none !important;
-    width: 100%;
-    justify-content: flex-start;
-    padding: 8px 10px;
-    border-radius: 8px;
-    box-shadow: none;
-  }
-
-  .synapse-pod:hover {
-    transform: translateY(-2px) !important;
-  }
-
-  /* Container wrapper for the 6 pods on mobile */
-  .brain-constellation {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .avatar-core-pod {
-    grid-column: span 2;
-    margin: 0 auto 12px;
+  .portrait-badge {
+    bottom: -12px;
+    padding: 5px 12px;
+    font-size: 0.68rem;
   }
 
   /* Metrics Track */
@@ -2421,16 +2158,6 @@ ul { list-style: none; }
 
   .hero__actions .btn {
     width: 100%;
-  }
-
-  .brain-constellation {
-    grid-template-columns: 1fr;
-  }
-
-  .avatar-core-pod {
-    grid-column: span 1;
-    width: 125px;
-    height: 125px;
   }
 
   .metrics-track {
